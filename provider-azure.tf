@@ -11,3 +11,15 @@ terraform {
 provider "azurerm" {
   features {}
 }
+
+terraform {
+  cloud {
+    organization = "itsok"
+    ## Required for Terraform Enterprise; Defaults to app.terraform.io for Terraform Cloud
+    hostname = "app.terraform.io"
+
+    workspaces {   
+      tags = ["terraform-training"]
+    }
+  }
+}
