@@ -1,2 +1,4 @@
-test
-test2
+############################# USEFUL LINKS #############################
+Azure locations:
+az account list-locations -o table
+
