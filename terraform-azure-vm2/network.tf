@@ -1,3 +1,0 @@
-module "vnet" {
-  source = "./network"
-}
