@@ -10,7 +10,11 @@ resource "azurerm_container_group" "lab_container" {
 
   container {
     name   = "nginx"
+<<<<<<< HEAD
     image  = "docker.io/nginx:1.23"
+=======
+    image  = "docker.io/nginx:1.23latest"
+>>>>>>> main
     cpu    = "0.5"
     memory = "1.5"
 
