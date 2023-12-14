@@ -39,7 +39,7 @@ resource "azurerm_consumption_budget_subscription" "lab_budget" {
 
   notification {
     enabled        = true
-    threshold      = 0
+    threshold      = 1
     operator       = "GreaterThan"
 
     contact_emails = [
