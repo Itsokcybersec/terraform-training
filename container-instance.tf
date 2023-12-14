@@ -10,7 +10,7 @@ resource "azurerm_container_group" "lab_container" {
 
   container {
     name   = "nginx"
-    image  = "docker.io/nginx:latest"
+    image  = "mcr.microsoft.com/cbl-mariner/base/nginx:1"
     cpu    = "0.5"
     memory = "1.5"
 
